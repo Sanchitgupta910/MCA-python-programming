@@ -7,7 +7,7 @@
 
 def ValidateCreditCard():
     ccnumber = list(input("Please enter a card number: ").strip())
-    if 14 <= len(ccnumber) and len(ccnumber) >=19:
+    if len(ccnumber) <= 13 and len(ccnumber) >= 19:
         return False
 
     # Remove the last digit from the card number
